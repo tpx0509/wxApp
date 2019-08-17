@@ -1,0 +1,38 @@
+/* miniprogram/pages/movie.wxss */
+.movie {
+   height: 300rpx;
+   display: flex;
+   padding:  10px;
+   border-bottom: 1px solid #ccc;
+}
+.movie-img {
+  width: 200rpx;
+  height: 100%;
+  flex-shrink: 0;
+}
+.movie-info {
+   flex : 1;
+   max-width: calc(100vh - 200rpx);
+   margin-left : 20rpx;
+}
+.stars {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.movie-title {
+  margin-bottom : 15rpx;
+  color: #666;
+  font-size : 40rpx;
+  font-weight: bolder;
+}
+.mrb {
+  margin-bottom : 10rpx;
+}
+.movie-grade {
+  color : #faaf00;
+}
+.movie-href {
+   float : right;
+   margin-right : 20rpx;
+}

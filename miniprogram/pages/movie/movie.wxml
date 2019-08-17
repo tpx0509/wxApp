@@ -1,0 +1,13 @@
+<!--miniprogram/pages/movie.wxml-->
+<view wx:for="{{ movieList }}" wx:key="{{ index }}" class="movie">
+   <image src="{{ item.images.small }}" class="movie-img"></image>
+   <view class="movie-info">
+      <text class="movie-title">{{ item.title }}</text>
+      <view class="mrb">观众评分: <text class="movie-grade">{{ item.rating.average }}</text></view>
+      <view class="mrb">类型:<text wx:for='{{ item.genres }}' wx:key="{{ index }}"> {{ item }}</text></view> 
+      <view class="mrb stars">演员:<text wx:for='{{ item.casts }}' wx:key="{{ index }}"> {{ item.name }}</text></view> 
+      <view class="mrb">年份：{{ item.year }}<van-button type="danger" size="mini" data-movieId="{{ item.id }}" class="movie-href" bindtap="clickTodetail">评价</van-button></view>
+      
+   </view>
+   
+</view>

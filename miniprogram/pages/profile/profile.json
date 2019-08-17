@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-field": "vant-weapp/field",
+    "van-rate": "vant-weapp/rate",
+    "van-button": "vant-weapp/button"
+  },
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#E54847",
+  "navigationBarTitleText": "我的",
+  "navigationBarTextStyle": "white"
+}
